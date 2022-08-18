@@ -626,7 +626,7 @@ void publish_path(const ros::Publisher pubPath)
     /*** if path is too large, the rvis will crash ***/
     static int jjj = 0;
     jjj++;
-    if (jjj % 10 == 0)
+    // if (jjj % 10 == 0)
     {
         path.poses.push_back(msg_body_pose);
         pubPath.publish(path);
