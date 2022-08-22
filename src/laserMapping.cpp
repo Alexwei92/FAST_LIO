@@ -1047,8 +1047,8 @@ int main(int argc, char** argv)
         for(size_t i = 0; i < path.poses.size(); i++)
         {
             fout_traj << path.poses.at(i).header.stamp << " "
-            << path.poses.at(i).pose.position.y << " "
             << path.poses.at(i).pose.position.x << " "
+            << path.poses.at(i).pose.position.y << " "
             << path.poses.at(i).pose.position.z << " "
             << path.poses.at(i).pose.orientation.x << " "
             << path.poses.at(i).pose.orientation.y << " "
